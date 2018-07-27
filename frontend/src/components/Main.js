@@ -22,7 +22,7 @@ class Main extends Component {
             method: 'POST',
             body: data,
         }).then((response) => {
-            res.json().then((body) => {
+            response.json().then((body) => {
                 this.setState({ imageURL: `http://localhost:8000/${body.file}` });
             });
         });
