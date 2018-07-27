@@ -4,7 +4,7 @@ import './App.css';
 import Main from './components/Main';
 
 const App = () => (
-  <div>
+  <div className="App">
     <h1>File Upload</h1>
     <Main />
   </div>

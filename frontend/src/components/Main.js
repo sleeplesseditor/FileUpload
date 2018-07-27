@@ -37,16 +37,23 @@ class Main extends Component {
                         type='file' 
                     />
                 </div>
+                <br />
                 <div>
                     <input 
                         ref={(ref) => { this.fileName = ref; }} 
-                        type='text' placeholder='Enter the name of the specified file' 
+                        type='text' placeholder='Enter the file name' 
                     />
                 </div>
                 <br />
                 <div>
-                    <button>Upload</button>
+                    <button 
+                        type="button submit" 
+                        className="btn btn-secondary"
+                    >
+                        Upload
+                    </button>
                 </div>
+                <br />
                 <img src={this.state.imageURL} alt='img' />
             </form>
         );
